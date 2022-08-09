@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+bool Search(int arr[], int n, int key){
+  for(int i=0; i<n; i++){
+    if(arr[i]==key){
+      cout<<"present";
+      return true;
+      break;
+    }
+    
+    
+  }
+  cout<<"invalid key";
+  return false;
+  
+}
+
+int main(){
+  int arr[5]={2,8,11,-2,7};
+  int key;
+  cout<<"Enter Key";
+  cin>>key;
+  
+
+Search(arr,5,key);
+  
+
+    return 0;
+  
+}
